@@ -2,10 +2,9 @@ sudo: false
 
 env:
   global:
-    - BINSTAR_USER: menpo
+    - BINSTAR_USER: jlaura
   matrix:
     - PYTHON_VERSION: 2.7
-    - PYTHON_VERSION: 3.4
     - PYTHON_VERSION: 3.5
 
 install:
@@ -14,11 +13,3 @@ install:
 
 script:
 - ~/miniconda/bin/python condaci.py build ./conda
-
-notifications:
-  slack:
-    rooms:
-      - menpo:19gyWImMkOfCj0iDAgTbDlDA
-    on_success: :change
-    on_failure: :change
-  email: false
