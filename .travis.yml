@@ -34,7 +34,6 @@ install:
 
 # Prep to build for upload to binstar
 - conda install anaconda-client anaconda-build
-- conda update -n root conda-build
 - conda config --add channels menpo
 
 # Straight from the menpo team
