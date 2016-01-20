@@ -1,4 +1,4 @@
-conda-opencv3 ![Conda Build Number](http://anaconda.org/menpo/opencv3/badges/version.svg)
+conda-opencv3 ![Conda Build Number](http://anaconda.org/jlaura/opencv3/badges/version.svg)
 =============
 This repository contains a conda recipe for automatically building the OpenCV3 Python package and uploading it to our anaconda repository, menpo. This recipe provides builds for Win32, Win64, OSX64 and Linux64 (Ubuntu 12.04 and above).
 
@@ -10,9 +10,9 @@ The automated builds are provided by:
 
 | Build Service  | Status | Platforms |
 | -------------- | ------ | --------- |
-| Travis         | [![Travis Build Status](https://travis-ci.org/menpo/conda-opencv3.svg?branch=master)](https://travis-ci.org/menpo/conda-opencv3)  | Ubuntu 12.04 (x64) |
-| Appveyor       | [![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/menpo/conda-opencv3?branch=master&svg=true)](https://ci.appveyor.com/project/jabooth/conda-opencv3) | Windows Server 2012 R2 (x86, x64) |
-| Jenkins       | [![Jenkins Build Status](http://jenkins.menpo.org/buildStatus/icon?job=conda-opencv3)](http://jenkins.menpo.org/view/conda/job/conda-opencv3/) | OSX 10.10 (x64) |
+| Travis         |[![Build Status](https://travis-ci.org/USGS-Astrogeology/conda-opencv3.svg?branch=master)](https://travis-ci.org/USGS-Astrogeology/conda-opencv3)  | Ubuntu 12.04 (x64) |
+| Appveyor       |  | Windows Server 2012 R2 (x86, x64) |
+| Jenkins       |  | OSX 10.10 (x64) |
 
 Build Settings
 --------------
@@ -26,7 +26,7 @@ If the lack of this functionality is impeding you, please attempt to build the p
 
 ```
 $ conda install conda-build
-$ git clone https://github.com/menpo/conda-opencv3
+$ git clone https://github.com/jlaura/conda-opencv3
 $ cd conda-opencv3
 $ conda config --add channels menpo
 $ conda build conda/
