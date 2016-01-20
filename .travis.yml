@@ -1,11 +1,16 @@
-language: python
+language: cpp
 sudo: false
+
+branches:
+only:
+  master
+
+before_install:
 
 env:
   global:
     - BINSTAR_USER: jlaura
   matrix:
-    - PYTHON_VERSION: 2.7
     - PYTHON_VERSION: 3.5
 
 install:
@@ -14,3 +19,10 @@ install:
 
 script:
 - ~/miniconda/bin/python condaci.py build ./conda
+
+notifications:
+  email:
+    recipients:
+      - jlaura@usgs.gov
+      
+after_success:
