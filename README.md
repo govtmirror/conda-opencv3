@@ -1,6 +1,8 @@
 conda-opencv3 ![Conda Build Number](http://anaconda.org/jlaura/opencv3/badges/version.svg)
 =============
-This repository contains a conda recipe for automatically building the OpenCV3 Python package and uploading it to our anaconda repository, menpo. This recipe provides builds for Win32, Win64, OSX64 and Linux64 (Ubuntu 12.04 and above).
+This repository contains a conda recipe for automatically building the OpenCV3 Python package and uploading it to our anaconda repository, jlaura. This recipe provides builds for Win32, Win64, OSX64 and Linux64 (Ubuntu 12.04 and above).
+
+To install these builds: `conda install -c https://conda.anaconda.org/jlaura opencv3`
 
 I have seperated the OpenCV builds from the OpenCV3 builds as OpenCV 2.x and 3.x contain breaking changes between each other. However, note that both OpenCV2 and OpenCV3 install a single ``cv2`` binary module into Python's site-packages, and thus can't actually coexist. Why OpenCV 3.x maintained ``cv2``, rather than moving to ``cv3``, is beyond me, but note this:
 
