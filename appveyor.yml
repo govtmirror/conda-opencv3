@@ -19,5 +19,7 @@ install:
 - cmd: set tmp_cmd=python C:\\condaci.py miniconda_dir
 - cmd: "FOR /F %%i IN (' %tmp_cmd% ') DO SET APPV_MINICONDA_DIR=%%i"
 - cmd: set APPV_MINICONDA_EXE="%APPV_MINICONDA_DIR%\python.exe"
+- cmd: set APPV_CONDA_EXE="%APPV_MINICONDA_DIR%\conda.exe"
+- cmd: "%APPV_CONDA_EXE% install anaconda-client anaconda-build"
+- cmd: "%APPV_CONDA_EXE% config --add channels menpo"
 - cmd: "%APPV_MINICONDA_EXE% C:\\condaci.py build conda"
-
