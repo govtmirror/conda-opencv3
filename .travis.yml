@@ -1,6 +1,10 @@
 language: cpp
 sudo: false
 
+os:
+  - linux
+  - osx
+
 branches:
 only:
   master

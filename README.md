@@ -1,4 +1,4 @@
-conda-opencv3 ![Conda Build Number](http://anaconda.org/jlaura/opencv3/badges/version.svg)
+conda-opencv3 ![Conda Build Number](http://anaconda.org/jlaura/opencv3/badges/version.svg) ![Install With Conda](https://anaconda.org/jlaura/opencv3/badges/installer/conda.svg)
 =============
 This repository contains a conda recipe for automatically building the OpenCV3 Python package and uploading it to our anaconda repository, jlaura. This recipe provides builds for Win32, Win64, OSX64 and Linux64 (Ubuntu 12.04 and above).
 
