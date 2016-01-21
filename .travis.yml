@@ -9,11 +9,11 @@ matrix:
     - os: linux
       sudo: false
       python: 3.5
-      PYTHON_VERSION = "3.5"
+      PYTHON_VERSION: "3.5"
     - os: osx
       sudo: false
       python: 3.5
-      PYTHON_VERSION = "3.5"
+      PYTHON_VERSION: "3.5"
 
 install:
 # We do this conditionally because it saves us some downloading if the
