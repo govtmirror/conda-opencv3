@@ -30,7 +30,7 @@ if [ "${SHORT_OS_STR}" == "Darwin" ]; then
 fi
 
 if [ $PY3K -eq 1 ]; then
-    PY_VER_M="3.4m"
+    PY_VER_M="${PY_VER}m"
     OCV_PYTHON="-DBUILD_opencv_python3=1 -DPYTHON3_EXECUTABLE=$PYTHON -DPYTHON3_INCLUDE_DIR=$PREFIX/include/python${PY_VER_M} -DPYTHON3_LIBRARY=${PREFIX}/lib/libpython${PY_VER_M}.${DYNAMIC_EXT}"
 else
     OCV_PYTHON="-DBUILD_opencv_python2=1 -DPYTHON2_EXECUTABLE=$PYTHON -DPYTHON2_INCLUDE_DIR=$PREFIX/include/python${PY_VER} -DPYTHON2_LIBRARY=${PREFIX}/lib/libpython${PY_VER}.${DYNAMIC_EXT} -DPYTHON_INCLUDE_DIR2=$PREFIX/include/python${PY_VER}"
@@ -90,7 +90,7 @@ if [ $IS_OSX -eq 1 ]; then
     # Fix the lib prefix for the cv2.so
     # Borrowed from
     # http://answers.opencv.org/question/4134/cmake-install_name_tool-absolute-path-for-library-on-mac-osx/
-    find ${SP_DIR} -type f -name "cv2.so" -print0 | while IFS="" read -r -d "" dylibpath; do
+    find ${SP_DIR} -type f -name "cv2*.so" -print0 | while IFS="" read -r -d "" dylibpath; do
     echo install_name_tool -id "$dylibpath" "$dylibpath"
         install_name_tool -id "$dylibpath" "$dylibpath"
         otool -L $dylibpath | grep libopencv | tr -d ':' | while read -a libs ; do
