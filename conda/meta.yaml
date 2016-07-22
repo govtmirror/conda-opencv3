@@ -20,13 +20,13 @@ requirements:
    - cmake 3.3.0  # [win]
    - numpy
    - eigen 3.2.2
-   - tbb 4.3_20141023  # [osx]
+   - tbb  # [osx]
    - msinttypes r26  # [win]
 
   run:
    - python
    - numpy
-   - tbb 4.3_20141023  # [osx]
+   - tbb   # [osx]
 
 test:
   imports:
