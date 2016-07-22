@@ -19,7 +19,7 @@ requirements:
    - wget 1.16.3  # [win]
    - cmake 3.3.0  # [win]
    - numpy
-   - eigen 3.2.2
+   - eigen
    - tbb  # [osx]
    - msinttypes r26  # [win]
 
