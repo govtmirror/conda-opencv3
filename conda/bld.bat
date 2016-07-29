@@ -51,7 +51,7 @@ if %PY3K%==1 (
 )
 
 rem wget the contrib package
-"%LIBRARY_BIN%\wget.exe" -O contrib.tar.gz https://github.com/Itseez/opencv_contrib/archive/3.0.0.tar.gz --no-check-certificate
+curl -o contrib.tar.gz https://github.com/Itseez/opencv_contrib/archive/3.0.0.tar.gz --no-check-certificate
 rem Copy a cached version for speed
 rem copy ..\..\..\src_cache\contrib.tar.gz contrib.tar.gz
 rem TODO: Check SHA256 of downloaded contrib package
