@@ -7,7 +7,6 @@ source:
 
   patches:
     - cap_mpjpeg_decoder.patch  # [win]
-    - no_rpath.patch
 
 
 requirements:
@@ -15,14 +14,14 @@ requirements:
    - python
    - cmake  # [win]
    - hdf5 1.8.*  # [osx]
-   - numpy
+   - numpy >=1.10
    - eigen 3.*
    - tbb  # [osx]
    - msinttypes r26  # [win]
 
   run:
    - python
-   - numpy
+   - numpy >=1.1
    - hdf5 1.8.*  # [osx]
    - tbb   # [osx]
 
