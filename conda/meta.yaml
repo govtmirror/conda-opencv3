@@ -15,14 +15,14 @@ requirements:
    - python
    - cmake  # [win]
    - hdf5 1.8.*  # [osx]
-   - numpy >=1.10
+   - numpy
    - eigen 3.*
    - tbb  # [osx]
    - msinttypes r26  # [win]
 
   run:
    - python
-   - numpy >=1.10
+   - numpy
    - hdf5 1.8.*  # [osx]
    - tbb   # [osx]
 
