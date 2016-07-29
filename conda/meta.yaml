@@ -7,8 +7,6 @@ source:
   git_rev: fef7509eed59567c3e3ac52d5b1efd42ddb3af3e
  
   patches:
-    - cap_mpjpeg_decoder.patch  # [win]
-    - detection_based_filter.patch  # [win]
     - python3.patch  # [win and py34]
     - python2.patch  # [win and py27]
     
