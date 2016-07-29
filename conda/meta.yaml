@@ -1,28 +1,29 @@
 package:
   name: opencv3
-  version: 3.0.0
+  version: 3.1.0
 
 source:
-  git_url: https://github.com/Itseez/opencv.git
-  git_rev: fef7509eed59567c3e3ac52d5b1efd42ddb3af3e
- 
+  git_url: https://github.com/opencv/opencv
+
   patches:
     - cap_mpjpeg_decoder.patch  # [win]
-    - detection_based_filter.patch  # [win]
+    - no_rpath.patch
 
 
 requirements:
   build:
    - python
    - cmake  # [win]
-   - numpy
-   - eigen
+   - hdf5 1.8.*  # [osx]
+   - numpy >= 1.10
+   - eigen 3.*
    - tbb  # [osx]
    - msinttypes r26  # [win]
 
   run:
    - python
-   - numpy
+   - numpy >= 1.10
+   - hdf5 1.8.*  # [osx]
    - tbb   # [osx]
 
 test:
