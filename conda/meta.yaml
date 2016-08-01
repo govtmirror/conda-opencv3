@@ -4,6 +4,7 @@ package:
 
 source:
   git_url: https://github.com/opencv/opencv
+  git_rev: 4f7b3e8a56d0492057508d9841bfd7c3be81f730
 
   patches:
     - cap_mpjpeg_decoder.patch  # [win]
