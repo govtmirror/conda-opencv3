@@ -10,16 +10,7 @@ matrix:
     - os: linux
       sudo: false
       python: 3.5
-      addons:
-       apt:
-         sources:
-           - ubuntu-toolchain-r-test
-         packages:
-           - gcc-4.8
-           - g++-4.8
-      env:
-        - PYTHON_VERSION="3.5"
-        - COMPILER=g++-4.8
+      env: PYTHON_VERSION="3.5"
     - os: osx
       sudo: false
       python: 3.5
