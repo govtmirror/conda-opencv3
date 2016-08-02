@@ -1,0 +1,24 @@
+From f19311f1e5cc0306ec95e578779e2382832acb05 Mon Sep 17 00:00:00 2001
+From: Jason R Laura <jlaura@hemis.wr.usgs.gov>
+Date: Tue, 2 Aug 2016 11:21:31 -0700
+Subject: [PATCH] adding undef complex
+
+---
+ modules/core/src/hal_internal.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/modules/core/src/hal_internal.cpp b/modules/core/src/hal_internal.cpp
+index 07054f1..4bc81c6 100644
+--- a/modules/core/src/hal_internal.cpp
++++ b/modules/core/src/hal_internal.cpp
+@@ -49,6 +49,7 @@
+ #include <cmath>
+ #include <lapacke.h>
+ #include <cblas.h>
++#undef complex
+ #include <algorithm>
+ #include <typeinfo>
+ #include <limits>
+-- 
+2.4.9 (Apple Git-60)
+
