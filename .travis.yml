@@ -11,7 +11,15 @@ matrix:
       sudo: false
       python: 3.5
       env: PYTHON_VERSION="3.5"
-    - os: osx
+      - compiler: gcc
+          addons:
+            apt:
+              sources:
+                - ubuntu-toolchain-r-test
+              packages:
+                - g++-5
+          env: COMPILER=g++-5
+      - os: osx
       sudo: false
       python: 3.5
       env: PYTHON_VERSION="3.5"
