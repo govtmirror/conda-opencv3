@@ -28,7 +28,7 @@ requirements:
 
 test:
   imports:
-    - cv2
+    - cv_2
     - cv2.xfeatures2d
 
 about:

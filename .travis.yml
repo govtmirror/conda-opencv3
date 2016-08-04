@@ -5,16 +5,18 @@ branches:
   only:
     master
 
-matrix:
-  include:
-    - os: linux
-      sudo: false
-      python: 3.5
-      env: PYTHON_VERSION="3.5"
-    - os: osx
-      sudo: false
-      python: 3.5
-      env: PYTHON_VERSION="3.5"
+os:
+  - linux
+  - osx
+
+addons:
+  apt:
+    source:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.9
+env:
+  - PYTHON_VERSION="3.5"
 
 install:
 # We do this conditionally because it saves us some downloading if the
