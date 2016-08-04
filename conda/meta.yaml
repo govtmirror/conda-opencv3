@@ -8,7 +8,6 @@ source:
 
   patches:
     - cap_mpjpeg_decoder.patch  # [win]
-    - undef_complex.patch  # [linux]
 
 requirements:
   build:
