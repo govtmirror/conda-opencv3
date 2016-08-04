@@ -65,7 +65,6 @@ cmake .. -G"$CMAKE_GENERATOR"                                            \
     -DINSTALL_C_EXAMPLES=0                                               \
     -DOPENCV_EXTRA_MODULES_PATH="opencv_contrib/modules"                 \
     -DCMAKE_SKIP_RPATH:bool=ON                                           \
-    -DCMAKE_INSTALL_PREFIX=$PREFIX                                       \
-    -DCMAKE_CXX_COMPILER=$CXX
+    -DCMAKE_INSTALL_PREFIX=$PREFIX
 make -j${CPU_COUNT}
 make install
