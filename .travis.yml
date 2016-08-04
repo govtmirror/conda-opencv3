@@ -15,11 +15,11 @@ matrix:
           sources: ['ubuntu-toolchain-r-test']
           packages: ['g++-5']
       env:
-        COMPILER=g++-5
+        CXX=g++-5
         PYTHON_VERSION="3.5"
     - os: osx
       compiler: clang
-      env: PYTHON_VERISON="3.5"
+      env: PYTHON_VERSION="3.5"
 
 install:
 # We do this conditionally because it saves us some downloading if the
