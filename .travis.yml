@@ -11,6 +11,7 @@ matrix:
     - os: linux
       sudo: required
       dist: trusty
+      env: PYTHON_VERSION="3.5"
     - os: osx
       compiler: clang
       env: PYTHON_VERSION="3.5"

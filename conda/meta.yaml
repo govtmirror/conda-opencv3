@@ -19,7 +19,6 @@ requirements:
    - eigen 3.*
    - tbb  # [osx]
    - msinttypes r26  # [win]
-   - gcc  # [linux]
 
   run:
    - python
